@@ -1,0 +1,17 @@
+ASSET PROVENANCE
+
+Images: sista-farjan.jpg, mellan-husen.jpg, det-som-lyser.jpg
+Original fictional scenes generated with OpenAI's built-in image generation
+tool on 5 November 2026 for this project. They are not stills from real films.
+JPEG derivatives made from retained generated PNG originals. No real film
+credits, venues, reviews or upcoming events are implied.
+
+Display font: Anton Regular by Vernon Adams, obtained from Google Fonts:
+https://github.com/google/fonts/tree/main/ofl/anton
+Released under the SIL Open Font License 1.1, retained as assets/Anton-OFL.txt.
+Source download: https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf
+Downloaded 5 November 2026. Body text uses system fonts.
+
+The wordmark, mark.svg, visual identity, Swedish editorial copy, fictional
+synopses, interface code and programme were authored for Efterbild.
+All website assets are served locally. There are no external runtime requests.
