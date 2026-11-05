@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ed4c34" />
+    <meta
+      name="description"
+      content="Efterbild är en fiktiv liten biograf. Upptäck tre påhittade filmer i programmet När staden tystnar och prova att välja plats."
+    />
+    <title>Efterbild — När staden tystnar</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/Anton-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#program">Till programmet</a>
+    <header class="masthead" id="toppen">
+      <div class="topline">
+        <a
+          class="brand-small"
+          href="#toppen"
+          aria-label="Efterbild, till början"
+          ><span class="brand-mark" aria-hidden="true"
+            ><i></i><i></i><i></i></span
+          ><span>EN LITEN BIO.<br />ETT STORT MÖRKER.</span></a
+        >
+        <nav aria-label="Huvudmeny">
+          <a href="#program">Program <span aria-hidden="true">↘</span></a
+          ><a href="#om">Om Efterbild <span aria-hidden="true">↘</span></a>
+        </nav>
+      </div>
+      <h1 class="wordmark">EFTERBILD</h1>
+      <div class="edition-line">
+        <span>PROGRAM Nº 01</span><span>NÄR STADEN TYSTNAR</span
+        ><span>EN FIKTIV BIOGRAF</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="opening" aria-label="När staden tystnar">
+        <button
+          class="feature-film"
+          data-film="ferry"
+          aria-label="Läs om Sista färjan, spelfilm, 94 minuter"
+        >
+          <img
+            src="assets/sista-farjan.jpg"
+            alt="En kvinna i röd kappa ser ut mot en blå hamn från en färja."
+            width="1672"
+            height="941"
+            fetchpriority="high"
+          />
+          <span class="feature-top"
+            ><span>KVÄLLENS FÖRSTA FILM</span><span>01 / 03</span></span
+          >
+          <span class="feature-bottom"
+            ><span
+              ><span class="film-label">18.00 · SPELFILM · 94 MIN</span
+              ><span class="feature-title">Sista färjan</span></span
+            ><span class="feature-arrow" aria-hidden="true">↗</span></span
+          >
+        </button>
+        <div class="opening-note">
+          <span class="eyebrow">EN FILMKVÄLL I TRE AKTER</span>
+          <h2>
+            Natten har<br />
+            fler historier.
+          </h2>
+          <p>
+            En sista färja. Ett öppet fönster. En tvättomat där ljuset aldrig släcks.
+            Tre filmer om det som blir synligt när staden tystnar.
+          </p>
+          <a class="text-link" href="#program"
+            >Utforska programmet <span aria-hidden="true">↘</span></a
+          >
+        </div>
+      </section>
+
+      <section
+        class="programme section-pad"
+        id="program"
+        aria-labelledby="program-heading"
+      >
+        <div class="section-kicker">
+          <span>PROGRAMMET</span>
+        </div>
+        <div class="programme-head">
+          <h2 id="program-heading">När staden<br />tystnar.</h2>
+          <div class="programme-intro">
+            <p>
+              Följ kvällen från hamnen till det sista tända fönstret. Välj en
+              film och läs om visningen.
+            </p>
+            <div class="filters" role="group" aria-label="Filtrera programmet">
+              <button aria-pressed="true" data-filter="all">
+                Alla filmer <span>3</span></button
+              ><button aria-pressed="false" data-filter="feature">
+                Långfilm <span>2</span></button
+              ><button aria-pressed="false" data-filter="short">
+                Kortfilm <span>1</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="sr-only" id="filter-status" role="status"></p>
+        <div class="film-list">
+          <article class="film-row" data-category="feature">
+            <div class="film-index">
+              <span>01</span><span class="film-time">18.00</span>
+            </div>
+            <button
+              class="film-image"
+              data-film="ferry"
+              aria-label="Läs om Sista färjan"
+            >
+              <img
+                src="assets/sista-farjan.jpg"
+                alt="Kvinnan ombord på färjan i skymningen."
+                width="1672"
+                height="941"
+              /><span aria-hidden="true">↗</span>
+            </button>
+            <div class="film-info">
+              <p class="eyebrow">SPELFILM / 94 MIN / SVENSKT TAL</p>
+              <h3>Sista färjan</h3>
+              <p>
+                En missad avgång för två främlingar samman. Under en natt på
+                vattnet blir vägen hem allt mindre självklar.
+              </p>
+              <button class="text-link" data-film="ferry">
+                Om filmen & visningen <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+          <article class="film-row" data-category="short">
+            <div class="film-index">
+              <span>02</span><span class="film-time">20.00</span>
+            </div>
+            <button
+              class="film-image"
+              data-film="windows"
+              aria-label="Läs om Mellan husen"
+            >
+              <img
+                src="assets/mellan-husen.jpg"
+                alt="Tvätt hänger mellan husväggar under ett upplyst fönster, i svartvitt."
+                width="1672"
+                height="941"
+              /><span aria-hidden="true">↗</span>
+            </button>
+            <div class="film-info">
+              <p class="eyebrow">KORTFILM / 28 MIN / UTAN DIALOG</p>
+              <h3>Mellan husen</h3>
+              <p>
+                En innergård, sju fönster och ljuden av liv vi aldrig får se.
+                Ett svartvitt porträtt av att bo nära och ändå långt ifrån.
+              </p>
+              <button class="text-link" data-film="windows">
+                Om filmen & visningen <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+          <article class="film-row" data-category="feature">
+            <div class="film-index">
+              <span>03</span><span class="film-time">21.00</span>
+            </div>
+            <button
+              class="film-image"
+              data-film="light"
+              aria-label="Läs om Det som lyser"
+            >
+              <img
+                src="assets/det-som-lyser.jpg"
+                alt="En tom tvättomat lyser varmt i natten, med en röd stol vid maskinerna."
+                width="1672"
+                height="941"
+              /><span aria-hidden="true">↗</span>
+            </button>
+            <div class="film-info">
+              <p class="eyebrow">SPELFILM / 78 MIN / SVENSKT TAL</p>
+              <h3>Det som lyser</h3>
+              <p>
+                I en nattöppen tvättomat möts människor som inte kan sova. Medan
+                maskinerna snurrar tar samtalen oväntade vägar.
+              </p>
+              <button class="text-link" data-film="light">
+                Om filmen & visningen <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        </div>
+        <noscript
+          ><p>
+            Aktivera JavaScript för att öppna filmanteckningar och prova
+            platsvalet. Hela programmet finns att läsa här ovanför.
+          </p></noscript
+        >
+      </section>
+
+      <section
+        class="programme-note section-pad"
+        aria-labelledby="note-heading"
+      >
+        <div class="section-kicker">
+          <span>ANTECKNING UR PROGRAMMET</span><span>01 — OM ATT SE</span>
+        </div>
+        <div class="note-layout">
+          <h2 id="note-heading">Ljuset i<br />mellanrummen<span>.</span></h2>
+          <div>
+            <p class="note-lead">
+              Staden blir aldrig helt mörk. Någon är alltid på väg hem. Någon
+              väntar fortfarande.
+            </p>
+            <p>
+              De här tre filmerna stannar hos människor och platser som dagen
+              skyndar förbi. En båt mellan två kajer, en gård mellan husen, en
+              stol mellan tvättmaskinerna.
+            </p>
+            <p>
+              Vi har lagt dem i den här ordningen för att låta kvällen sakta
+              byta tempo. Först en resa. Sedan ett stilla lyssnande. Till sist
+              ett rum att vara kvar i.
+            </p>
+            <a class="text-link" href="#program"
+              >Tillbaka till filmerna <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about section-pad"
+        id="om"
+        aria-labelledby="about-heading"
+      >
+        <div class="about-symbol" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow">OM EFTERBILD</span>
+          <h2 id="about-heading">En bio som<br />bara finns här.</h2>
+          <p>
+            Efterbild är en påhittad kvartersbio för dig som gärna sitter kvar
+            när eftertexterna rullar.
+          </p>
+          <p>
+            Platsvalet är en demo. Inga biljetter säljs och inga personuppgifter
+            samlas in.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="footer-brand" href="#toppen" aria-label="Efterbild, till början"
+        >EFTERBILD <span aria-hidden="true">↑</span></a
+      >
+      <div>
+        <span>PROGRAM Nº 01</span
+        ><a href="#program">Se programmet ↗</a>
+      </div>
+    </footer>
+
+    <dialog id="film-dialog" aria-labelledby="detail-title">
+      <div class="dialog-top">
+        <span id="detail-index">EFTERBILD / FILM 01</span
+        ><button id="close-dialog" aria-label="Stäng filmvisningen">
+          Stäng <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <img
+        id="detail-image"
+        class="detail-image"
+        src="assets/sista-farjan.jpg"
+        alt=""
+        width="1672"
+        height="941"
+      />
+      <div class="detail-content">
+        <p class="eyebrow" id="detail-meta"></p>
+        <h2 id="detail-title"></h2>
+        <div class="detail-columns">
+          <div>
+            <p class="detail-synopsis" id="detail-synopsis"></p>
+            <h3>Inför filmen</h3>
+            <p id="detail-note"></p>
+          </div>
+          <aside class="screening">
+            <p class="eyebrow">VISNING</p>
+            <p class="screening-time" id="detail-time"></p>
+            <p id="detail-screening"></p>
+            <button class="solid-button" id="show-seats">
+              Prova att välja plats <span aria-hidden="true">↗</span>
+            </button>
+            <p class="demo-hint">
+              En lokal demo. Ingen bokning görs och inga uppgifter skickas.
+            </p>
+          </aside>
+        </div>
+        <section id="seat-section" hidden aria-labelledby="seat-heading">
+          <div class="seat-heading">
+            <div>
+              <p class="eyebrow">PLATSVAL / DEMO</p>
+              <h3 id="seat-heading" tabindex="-1">Var vill du sitta?</h3>
+            </div>
+            <button class="reset-button" id="reset-seats">
+              Rensa platsval
+            </button>
+          </div>
+          <p>
+            Välj upp till fyra stolar. Tryck på en vald stol igen för att ta
+            bort den.
+          </p>
+          <div class="cinema-screen">FILMDUK</div>
+          <div
+            id="seat-map"
+            class="seat-map"
+            role="group"
+            aria-label="Stolar i exempelsalongen, rader A till D"
+          ></div>
+          <div class="seat-legend">
+            <span><i class="legend-free"></i>Ledig</span
+            ><span><i class="legend-selected"></i>Ditt val</span
+            ><span><i class="legend-taken"></i>Upptagen i exemplet</span>
+          </div>
+          <p
+            id="seat-status"
+            class="seat-status"
+            role="status"
+            aria-live="polite"
+          >
+            Inga platser valda.
+          </p>
+          <button class="solid-button" id="confirm-seats" disabled>
+            Visa mitt platsval <span aria-hidden="true">→</span>
+          </button>
+          <div id="demo-receipt" class="demo-receipt" hidden tabindex="-1">
+            <span class="eyebrow">DITT EXEMPEL</span>
+            <h3>Här skulle du sitta.</h3>
+            <p id="receipt-summary"></p>
+            <p>Inget är bokat. Du kan ändra ditt val eller stänga fönstret.</p>
+          </div>
+        </section>
+      </div>
+    </dialog>
+  </body>
+</html>
